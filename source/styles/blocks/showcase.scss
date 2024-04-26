@@ -1,0 +1,40 @@
+.showcase {
+  background-color: #d9d9d9;
+}
+
+.showcase__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: $base-color-black;
+  text-align: center;
+}
+
+.showcase__description {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.showcase__fact-term {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.showcase__fact-description {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: $base-color-black;
+  text-align: center;
+}
+
+.showcase__expend {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: $base-color-black;
+  text-transform: uppercase;
+  text-align: center;
+}

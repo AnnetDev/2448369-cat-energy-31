@@ -1,0 +1,27 @@
+.programs__card {
+  background-color: #d9d9d9;
+}
+
+.programs__card-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $base-color-black;
+}
+
+.programs__card-description {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.programs__card-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $base-color-black;
+  text-align: center;
+  text-decoration: none;
+}
+
