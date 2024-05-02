@@ -1,4 +1,5 @@
 .button {
+  display: inline-block;
   background-color: $bg-basic-green;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -7,4 +8,10 @@
   text-align: center;
   color: $base-color-white;
   text-decoration: none;
+  min-width: 100%;
+  min-height: 40px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  border: none;
+  grid-column: span 2;
 }

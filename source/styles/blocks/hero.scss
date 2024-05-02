@@ -1,20 +1,44 @@
+.hero {
+  background-image:
+    url("../../images/hero-bg-mobile@1x.jpg"),
+    linear-gradient(to bottom, #63a63b 302px, transparent 122px);
+  background-repeat: no-repeat;
+  background-size: fit;
+  background-position: center top;
+  width: 100%;
+
+  margin-bottom: 20px;
+}
+
 .hero__content-wrapper {
-  background-color: $bg-basic-green; //временно до вставки фона
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 27px 20px 0;
 }
 
 .hero__title {
+  margin: 0;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 25px;
 }
 
 .hero__slogan {
+  margin: 0;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 29px;
+}
+
+.hero-image {
+  display: block;
+  margin-bottom: 16px;
 }

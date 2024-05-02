@@ -30,6 +30,10 @@
         <img class="main-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="логотип Cat Energy">
       </a>
       <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <i class="main-navigation__toggle-iconline"></i>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list ">
             <li class="main-navigation__item">
@@ -49,9 +53,6 @@
             </li>
           </ul>
         </div>
-        <button class="main-navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </nav>
     </div>
   </header>
@@ -197,7 +198,7 @@
               <picture>
                 <source type="image/png" media="(min-width: 1340px)" srcset="images/slim-500-rice-desktop@1x.png 1x, images/slim-500-rice-desktop@2x.png 2x" width="161" height="171">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/slim-500-rice-tablet@1x.png 1x, images/slim-500-rice-tablet@2x.png 2x" width="161" height="171">
-                <img class="product-card__image" src="images/slim-500-buckwheat@1x.png" srcset="images/slim-500-buckwheat@2x.png 2x" width="86" height="78" alt="изображение упаковки">
+                <img class="product-card__image" src="images/slim-500-buckwheat@1x.png" srcset="images/slim-500-buckwheat@2x.png 2x" width="68" height="78" alt="изображение упаковки">
               </picture>
             </a>
             <div class="product-card__wrapper">
@@ -318,12 +319,10 @@
             <h3 class="additional-product-card__title">
               Сахарозаменитель
             </h3>
-            <p class="additional-product-card__attribute">
-              1 упаковка (100 г)
-            </p>
-            <p class="additional-product-card__price">
-              200 ₽
-            </p>
+            <dl class="additional-product-card__attributes">
+              <dt class="additional-product-card__attribute-name">1 упаковка (100 г)</dt>
+              <dd class="additional-product-card__attribute-value">200 ₽</dd>
+            </dl>
             <button class="button" type="button">
               заказать
             </button>
@@ -333,12 +332,10 @@
             <h3 class="additional-product-card__title">
               питьевая вода
             </h3>
-            <p class="additional-product-card__attribute">
-              5 литров
-            </p>
-            <p class="additional-product-card__price">
-              50 ₽
-            </p>
+            <dl class="additional-product-card__attributes">
+              <dt class="additional-product-card__attribute-name">5 литров</dt>
+              <dd class="additional-product-card__attribute-value">50 ₽</dd>
+            </dl>
             <button class="button" type="button">
               заказать
             </button>
@@ -348,12 +345,10 @@
             <h3 class="additional-product-card__title">
               молоко
             </h3>
-            <p class="additional-product-card__attribute">
-              1 литр
-            </p>
-            <p class="additional-product-card__price">
-              100 ₽
-            </p>
+            <dl class="additional-product-card__attributes">
+              <dt class="additional-product-card__attribute-name">1 литр</dt>
+              <dd class="additional-product-card__attribute-value">100 ₽</dd>
+            </dl>
             <button class="button" type="button">
               заказать
             </button>
@@ -363,12 +358,10 @@
             <h3 class="additional-product-card__title">
               витамины
             </h3>
-            <p class="additional-product-card__attribute">
-              1 упаковка (30 г)
-            </p>
-            <p class="additional-product-card__price">
-              300 ₽
-            </p>
+            <dl class="additional-product-card__attributes">
+              <dt class="additional-product-card__attribute-name">1 упаковка (30 г)</dt>
+              <dd class="additional-product-card__attribute-value">300 ₽</dd>
+            </dl>
             <button class="button" type="button">
               заказать
             </button>

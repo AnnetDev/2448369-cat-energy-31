@@ -1,3 +1,11 @@
+.main-navigation__wrapper {
+  display: none;
+}
+
+.main-navigation__wrapper--open {
+  display: block;
+}
+
 .main-navigation__item {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
@@ -8,4 +16,50 @@
 .main-navigation__link {
   color: $base-color-black;
   text-decoration: none;
+  display: block;
+}
+
+.main-navigation__list {
+  list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 33px;
+}
+
+.main-navigation__toggle {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  right: 20px;
+}
+
+.main-navigation__toggle::before,
+.main-navigation__toggle::after,
+.main-navigation__toggle i {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: $base-color-black;
+  transition: transform 0.3s ease;
+}
+
+.main-navigation__toggle::before {
+  top: 0;
+  transform-origin: left center;
+}
+
+.main-navigation__toggle::after {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.main-navigation__toggle-iconline {
+  top: 100%;
+  transform: translateY(-100%);
+  transform-origin: left center;
 }

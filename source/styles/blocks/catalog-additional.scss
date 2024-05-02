@@ -1,15 +1,65 @@
+.catalog-additional__content-wrapper {
+  margin: 0;
+  padding: 25px 20px 0;
+}
+
 .catalog-additional__title {
+  margin: 0;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
   color: $base-color-black;
-  text-align: center;
+  margin-bottom: 49px;
+  position: relative;
+}
+
+.catalog-additional__title::before {
+  position: absolute;
+  content: "";
+  width: 34px;
+  height: 2px;
+  background-color: #68b738;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -20px;
+}
+
+.catalog-additional__promo {
+  min-width: 280px;
+  min-height: 290px;
+  background-image: url("../../images/additionalpromo-bg-mobile@1x.jpg");
+  background-color: $bg-basic-green;
+  background-size: fit;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding: 0 50px;
+  position: relative;
+}
+
+.catalog-additional__promo::before {
+  position: absolute;
+  content: "";
+  min-width: 78px;
+  min-height: 80px;
+  background-image: url("../../icons/stack.svg#catalog-promo-icon");
+  left: 50%;
+  transform: translateX(-50%);
+  top: 58px;
 }
 
 .catalog-additional__promo-titile {
-  background-color: $bg-basic-green; //временно до вставки фона
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: $base-color-white;
+  padding-top: 187px;
+}
+
+.catalog-additional__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
 }

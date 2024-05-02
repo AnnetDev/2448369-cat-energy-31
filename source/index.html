@@ -30,6 +30,10 @@
         <img class="main-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="логотип Cat Energy">
       </a>
       <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <i class="main-navigation__toggle-iconline"></i>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list ">
             <li class="main-navigation__item">
@@ -49,9 +53,7 @@
             </li>
           </ul>
         </div>
-        <button class="main-navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+
       </nav>
     </div>
   </header>
@@ -92,7 +94,7 @@
             </a>
             <span class="visually-hidden">-></span>
           </li>
-          <li class="programs__card programs__card--mucsles">
+          <li class="programs__card programs__card--muscles">
             <h3 class="programs__card-title">
               Набор массы
             </h3>
@@ -101,6 +103,7 @@
             </p>
             <a class="programs__card-link" href="#">
               Каталог pro
+              <span class="visually-hidden">-></span>
             </a>
             <span class="visually-hidden">-></span>
           </li>
@@ -113,7 +116,7 @@
         <h2 class="features__title">
           Как это работает
         </h2>
-        <ol class="features__list">
+        <ol class="features__list" counter-reset="my-counter">
           <li class="features__item features__item--ingridients">
             <p class="features__description">
               Функциональное питание содержит только полезные питательные вещества.
@@ -169,11 +172,13 @@
                 <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet-desk@1x.png 1x, images/cat-after-tablet-desk@2x.png 2x" width="560" height="512">
                 <img class="slider__cat-after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="изображение кота после">
               </picture>
-              <button class="showcase-example__toggle" type="button">
-                <span class="showcase-example__toggle-button visually-hidden">
-                  Перетянуть слайдер
-                </span>
-              </button>
+              <div class="slider__toggle-wrapper">
+                <button class="slider__toggle" type="button">
+                  <span class="slider__toggle-button visually-hidden">
+                    Перетянуть слайдер
+                  </span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -266,6 +271,16 @@
 
     </div>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.querySelector(".main-navigation__toggle");
+      const menu = document.querySelector(".main-navigation__wrapper");
+
+      menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("main-navigation__wrapper--open");
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -1,12 +1,107 @@
+.features {
+  margin-bottom: 49px;
+}
+
+.features__content-wrapper {
+  padding: 0 20px;
+}
+
 .features__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
   color: $base-color-black;
-  text-align: center;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .features__description {
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
+  padding: 0;
 }
+
+.features__item--ingridients {
+  position: relative;
+}
+
+.features__item--ingridients::before {
+  position: absolute;
+  content: "";
+  min-width: 60px;
+  min-height: 60px;
+  background-color: $bg-basic-green;
+  background-image: url("../../icons/stack.svg#features-ingridients-icon");
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.features__item--form {
+  position: relative;
+}
+
+.features__item--form::before {
+  position: absolute;
+  content: "";
+  min-width: 60px;
+  min-height: 60px;
+  background-color: $bg-basic-green;
+  background-image: url("../../icons/stack.svg#features-form-icon");
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.features__item--diet {
+  position: relative;
+}
+
+.features__item--diet::before {
+  position: absolute;
+  content: "";
+  min-width: 60px;
+  min-height: 60px;
+  background-color: $bg-basic-green;
+  background-image: url("../../icons/stack.svg#features-diet-icon");
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.features__item--results {
+  position: relative;
+}
+
+.features__item--results::before {
+  position: absolute;
+  content: "";
+  min-width: 60px;
+  min-height: 60px;
+  background-color: $bg-basic-green;
+  background-image: url("../../icons/stack.svg#features-results-icon");
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// .features__item::marker {
+//   content: counter(my-counter) ". ";
+//   counter-increment: my-counter;
+//   display: inline-;
+//   width: 60px;
+//   height: 60px;
+//   background-color: green;
+// }

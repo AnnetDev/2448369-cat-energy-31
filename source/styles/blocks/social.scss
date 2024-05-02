@@ -1,0 +1,14 @@
+.social {
+  align-self: center;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  align-self: center;
+}

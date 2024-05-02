@@ -1,5 +1,9 @@
 .showcase {
-  background-color: #d9d9d9;
+  background-color: #f2f2f2;
+}
+
+.showcase__content-wrapper {
+  padding: 25px 20px 40px;
 }
 
 .showcase__title {
@@ -7,15 +11,37 @@
   font-size: 36px;
   line-height: 40px;
   color: $base-color-black;
-  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .showcase__description {
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.showcase__facts {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.showcase__fact {
+  display: flex;
+  flex-flow: column-reverse wrap;
+  gap: 7px;
+  justify-content: center;
+  border-top: 1px #cdcdcd;
 }
 
 .showcase__fact-term {
+  margin: 0;
+  width: 77px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
@@ -23,11 +49,13 @@
 }
 
 .showcase__fact-description {
+  margin: 0;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
   color: $base-color-black;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .showcase__expend {
