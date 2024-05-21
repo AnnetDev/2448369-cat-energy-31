@@ -13,18 +13,26 @@
   padding: 10px;
   transition: background-color 0.3s ease;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: #8ec36d;
+  }
 }
 
 .button--order {
   grid-column: span 2;
 }
 
-// @media (min-width: $tablet-width) {
-//   .button--hero {
-//     min-width: 200px;
-//     max-width: 250px;
-//     margin-left: 90px;
-//     display: block;
-//     order: 3;
-//   }
-// }
+
+.button-subscription {
+  @media (min-width: $tablet-width) {
+    min-width: 256px;
+    height: 56px;
+  }
+}

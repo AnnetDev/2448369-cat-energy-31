@@ -4,7 +4,44 @@
   padding: 25px 20px;
   align-items: center;
   position: relative;
-  border-bottom: solid 1px #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 324px;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: none;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding: 0 38px 40px;
+    width: 245px;
+  }
+}
+
+.product-card-more__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    padding: 0 37px 40px;
+    background-color: transparent;
+    // margin-top: 82px;
+    row-gap: 22px;
+    border-bottom: none;
+    display: grid;
+    width: 324px;
+    border: solid 2px #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 38px 40px;
+    width: 245px;
+  }
 }
 
 .product-card-more__title {
@@ -15,6 +52,18 @@
   color: $base-color-black;
   text-transform: uppercase;
   margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0;
+    grid-row: 2;
+    max-width: 150px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0;
+    grid-column: 1 / -1;
+  }
 }
 
 .product-card-more__description {
@@ -22,16 +71,44 @@
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    grid-row: 3;
+    font-size: 16px;
+    line-height: 20px;
+    grid-column: 1 / -1;
+  }
 }
 
 .product-card-more__button {
+  display: block;
   position: relative;
   border: none;
   outline: none;
   width: 30px;
   height: 30px;
   background-color: transparent;
+  margin: 0 auto;
   margin-bottom: 23px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1;
+    grid-column: 1 / 2;
+
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .product-card-more__button::before {
@@ -42,6 +119,10 @@
   background-color: #d3d3d3;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
 }
 
 .product-card-more__button::after {
@@ -53,4 +134,8 @@
   left: 50%;
   transform: translateX(-50%);
   rotate: 90deg;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
 }

@@ -1,17 +1,50 @@
 .main-header {
   position: relative;
   border-bottom: solid 1px #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.main-header--index {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    width: 1440px;
+    z-index: 10;
+  }
 }
 
 .main-header__content-wrapper {
   display: flex;
-  padding: 13px 20px;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding-top: 13px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: unset;
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .main-header__link {
   display: block;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .main-header__toggle {
@@ -22,6 +55,10 @@
   border: none;
   background-color: transparent;
   right: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-header__toggle::before,
@@ -52,39 +89,64 @@
   transform-origin: left center;
 }
 
-@media (min-width: $tablet-width) {
-  .main-header__toggle {
-    display: none;
+.main-header__toggle:hover {
+  opacity: 60%;
+}
+
+.main-header__toggle:active {
+  opacity: 30%;
+}
+
+.main-header__toggle--opened::before {
+  transform: rotate(45deg);
+  top: 50%;
+  transform-origin: center;
+}
+
+.main-header__toggle--opened::after {
+  transform: rotate(-45deg);
+  top: 50%;
+  transform-origin: center;
+}
+
+.main-header__toggle--opened i {
+  opacity: 0;
+}
+
+.main-header__toggle--nojs {
+  display: block;
+
+  &::before {
+    transform: rotate(45deg);
+    top: 50%;
+    transform-origin: center;
   }
 
-  .main-header {
-    border-bottom: none;
+  &::after {
+    transform: rotate(-45deg);
+    top: 50%;
+    transform-origin: center;
   }
+}
 
-  .main-header__content-wrapper {
-    display: flex;
-    justify-content: unset;
-    padding: 25px 34px 0 30px;
-  }
+.main-header__toggle--nojs i {
+  opacity: 0;
+}
 
-  .main-header__link--image {
+.main-header__link--image {
+  @media (min-width: $tablet-width) {
     display: block;
     margin-right: 13px;
   }
 
-  .main-header__link--text {
-    display: block;
-    margin-right: 94px;
+  @media (min-width: $desktop-width) {
+    // margin-right: 14px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-header__content-wrapper {
-    display: flex;
-    padding: 55px 110px 29px;
-  }
-
-  .main-header__link--image {
-    margin-right: 14px;
+.main-header__link--text {
+  @media (min-width: $tablet-width) {
+    display: block;
+    // margin-right: 94px;
   }
 }

@@ -1,27 +1,54 @@
+.subscription {
+  margin-bottom: 40px;
+}
+
 .subscription__content-wrapper {
   margin: 0;
-  padding: 40px 20px;
 }
 
 .subscription__title {
   margin: 0;
-  margin-bottom: 32px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
   color: $base-color-black;
   position: relative;
+  padding: 0 20px;
+  margin-bottom: 36px;
+  background-color: $base-color-white;
+  width: fit-content;
+  padding-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    width: fit-content;
+    padding: 0 40px;
+    margin-left: 30px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+    margin-left: 70px;
+  }
 }
 
 .subscription__title::before {
   position: absolute;
   content: "";
-  width: 108px;
+  z-index: -1;
+  width: 100vw;
   height: 2px;
   background-color: #68b738;
   top: 50%;
   transform: translateY(-50%);
-  right: -20px;
+  // right: -20px;
+
+  @media (min-width: $tablet-width) {
+    right: 0;
+    box-shadow: 100vw 0 0 0 #68b738;
+  }
 }
 
 .subscription__description {
@@ -30,4 +57,12 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
+  color: $base-color-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+    padding: 0 30px;
+  }
 }

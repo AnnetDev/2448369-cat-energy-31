@@ -13,6 +13,10 @@
 .developer__logo-text {
   font-size: 16px;
   line-height: 20px;
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .developer__link {

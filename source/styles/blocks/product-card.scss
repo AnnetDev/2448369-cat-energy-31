@@ -1,19 +1,100 @@
 .product-card {
   padding: 20px 20px 25px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    padding: unset;
+    // padding: 0 37px 40px;
+    display: grid;
+    // grid-template-rows: 82px 429px;
+    grid-template-columns: 1fr;
+    align-items: end;
+    // border-bottom: none;
+    // width: 324px;
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 210px 157px 40px;
+    // row-gap: 22px;
+    // background-color: #f2f2f2;
+    // background-image: linear-gradient(to bottom, transparent 16%, #f2f2f2 16%);
+    // background-size: contain;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding: 0 38px 40px;
+    width: 245px;
+  }
+}
+
+.product-card::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #ebebeb;
+  box-shadow: 100vw 0 0 0 #ebebeb;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.product-card__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 17px;
-  position: relative;
-  border-bottom: solid 1px #ebebeb;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  row-gap: 14px;
+  // margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+    padding: 0 37px 40px;
+
+    margin-top: 82px;
+    border-bottom: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(128px, auto) minmax(48px, auto) minmax(94px, auto) minmax(40px, auto);
+    row-gap: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 38px 40px;
+  }
 }
 
 .product-card__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  object-fit: contain;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -125px;
+  }
 }
 
 .product-card__image {
   display: block;
   margin: auto;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
+  // @media (min-width: $tablet-width) {
+  //   margin-bottom: 22px;
+  // }
 }
 
 .product-card__name {
@@ -24,7 +105,17 @@
   color: $base-color-black;
   max-width: 90px;
   text-transform: uppercase;
-  margin-bottom: 17px;
+  grid-column: 2 / -1;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 150px;
+    text-align: center;
+    margin: 0 auto;
+    grid-column: 1 / -1;
+  }
 }
 
 .product-card__attributes {
@@ -32,9 +123,25 @@
   line-height: 16px;
   margin: 0;
   padding: 0;
+  grid-column: 2 / -1;
+
+
+  @media (min-width: $tablet-width) {
+    grid-row: 3;
+    font-size: 16px;
+    line-height: 20px;
+    grid-column: 1 / -1;
+  }
 }
 
 .product-card__attribute {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 5px;
+  }
 }

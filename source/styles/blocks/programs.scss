@@ -1,21 +1,28 @@
 .programs {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .programs__content-wrapper {
-  padding: 0 20px;
+  // padding: 0 20px;
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  // padding: 0 30px;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    padding: 0 110px;
+    // padding: 0 110px;
   }
 }
 
@@ -117,6 +124,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .programs__card-link::before {
@@ -128,6 +139,15 @@
   width: 18px;
   height: 2px;
   background-color: $base-color-black;
+  transition: transform 0.5s ease;
+}
+
+.programs__card-link:hover::before {
+  width: 26px;
+}
+
+.programs__card-link:active::before {
+  opacity: 30%;
 }
 
 .programs__card-link::after {
@@ -142,6 +162,15 @@
   border-bottom: 5px solid transparent;
   border-left: 5px solid $base-color-black;
 }
+
+.programs__card-link:hover::after {
+  transform: translate(8px, -50%);
+}
+
+.programs__card-link:active::after {
+  opacity: 30%;
+}
+
 
 .programs__card--fit {
   position: relative;
@@ -163,7 +192,8 @@
     height: 194px;
     top: 47%;
     transform: translateY(-50%);
-    left: 66%;
+    left: auto;
+    right: 93px;
   }
 
   @media (min-width: $desktop-width) {
@@ -189,7 +219,8 @@
     height: 200px;
     top: 50%;
     transform: translateY(-50%);
-    left: 62%;
+    left: auto;
+    right: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -216,7 +247,8 @@
     height: 112px;
     top: 50%;
     transform: translateY(-50%);
-    left: 57%;
+    left: auto;
+    right: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -242,7 +274,8 @@
     height: 200px;
     top: 50%;
     transform: translateY(-50%);
-    left: 62%;
+    left: auto;
+    right: 63px;
   }
 
   @media (min-width: $desktop-width) {

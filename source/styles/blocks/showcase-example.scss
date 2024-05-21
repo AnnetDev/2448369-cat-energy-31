@@ -1,1 +1,10 @@
 // styles
+
+.showcase-example {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+
+    grid-area: span 2 / 2 / 2 / 3;
+  }
+}
