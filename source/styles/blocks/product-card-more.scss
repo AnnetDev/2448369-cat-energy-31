@@ -104,15 +104,6 @@
   background-color: transparent;
   margin: 0 auto;
   margin-bottom: 23px;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 60%;
-  }
-
-  &:active {
-    opacity: 30%;
-  }
 
   @media (min-width: $tablet-width) {
     grid-row: 1;
