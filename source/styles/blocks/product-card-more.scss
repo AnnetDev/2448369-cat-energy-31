@@ -89,8 +89,10 @@
     text-align: center;
     min-height: 96px;
   }
+
   @media (min-width: $desktop-width) {
-  min-height: 103px;}
+    min-height: 103px;
+  }
 }
 
 .product-card-more__button {
