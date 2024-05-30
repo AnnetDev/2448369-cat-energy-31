@@ -44,3 +44,14 @@
     line-height: 26px;
   }
 }
+
+.button--secondary {
+  background-color: #f2f2f2;
+  color: $base-color-text;
+
+  &:hover,
+  &:active {
+    background-color: #ebebeb;
+    color: $base-color-text;
+  }
+}

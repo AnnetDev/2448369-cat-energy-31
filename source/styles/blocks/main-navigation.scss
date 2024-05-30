@@ -121,11 +121,11 @@
     line-height: 30px;
   }
 
-  .main-header--index .main-navigation__link {
-    color: $base-color-white;
-  }
+  // .main-header--index .main-navigation__link {
+  //   color: $base-color-white;
+  // }
 
-  .main-header--index .main-navigation__link[aria-current="page"]::before {
-    background-color: $base-color-white;
-  }
+  // .main-header--index .main-navigation__link[aria-current="page"]::before {
+  //   background-color: $base-color-white;
+  // }
 }

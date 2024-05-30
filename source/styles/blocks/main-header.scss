@@ -16,6 +16,18 @@
   }
 }
 
+.main-header--index .main-navigation__link {
+  @media (min-width: $desktop-width) {
+    color: $base-color-white;
+  }
+}
+
+.main-header--index .main-navigation__link[aria-current="page"]::before {
+  @media (min-width: $desktop-width) {
+    background-color: $base-color-white;
+  }
+}
+
 .main-header__content-wrapper {
   display: flex;
   flex-wrap: wrap;
