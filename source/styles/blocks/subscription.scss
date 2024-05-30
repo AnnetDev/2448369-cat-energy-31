@@ -1,14 +1,22 @@
 .subscription {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 106px;
+  }
 }
 
 .subscription__content-wrapper {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .subscription__title {
   margin: 0;
-  font-family: "Oswald", sans-serif, "Arial";
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -16,10 +24,10 @@
   position: relative;
   padding: 0 20px;
   padding-right: 40px;
-  margin-bottom: 36px;
-  margin-left: -20px;
+  margin-bottom: 32px;
   background-color: $base-color-white;
   width: fit-content;
+  margin-left: -20px;
 
 
   @media (min-width: $tablet-width) {
@@ -27,31 +35,59 @@
     line-height: 32px;
     width: fit-content;
     padding: 0 40px;
-    margin-left: 30px;
-    margin-bottom: 72px;
+    margin-bottom: 68px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
     margin-left: -40px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 71px;
   }
 }
 
-.subscription__title::before {
-  position: absolute;
-  content: "";
-  z-index: -1;
-  width: 100vw;
-  height: 2px;
-  background-color: #68b738;
-  top: 50%;
-  transform: translateY(-50%);
+.subscription__header {
+  width: 100%;
+  position: relative;
 
-  @media (min-width: $tablet-width) {
-    right: 0;
-    box-shadow: 100vw 0 0 0 #68b738;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #68b738;
+    top: 9px;
+    // top: 50%;
+    // transform: translateY(-50%);
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 17px;
+    }
   }
 }
+
+// .subscription__title::before {
+//   position: absolute;
+//   content: "";
+//   z-index: -1;
+//   width: 100vw;
+//   height: 2px;
+//   background-color: #68b738;
+//   top: 50%;
+//   transform: translateY(-50%);
+
+//   @media (min-width: $tablet-width) {
+//     right: 0;
+//     box-shadow: 100vw 0 0 0 #68b738;
+//   }
+// }
 
 .subscription__description {
   margin: 0;

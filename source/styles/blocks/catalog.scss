@@ -1,5 +1,15 @@
 .catalog {
-  margin-bottom: 74px;
+  padding-top: 27px;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    margin-bottom: 74px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 70px;
+    }
+  }
 }
 
 .catalog__list {
@@ -21,7 +31,8 @@
 }
 
 .catalog__title {
-  font-family: "Oswald", sans-serif, "Arial";
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -34,6 +45,9 @@
     font-size: 60px;
     line-height: 60px;
     border: none;
+    padding-bottom: 0;
+    margin-bottom: 84px;
+    min-height: 48px;
   }
 }
 

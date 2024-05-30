@@ -13,7 +13,6 @@
     position: absolute;
     content: "";
     z-index: 10;
-    top: 55px;
   }
 }
 
@@ -34,7 +33,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    padding-top: unset;
+    padding-top: 55px;
     padding-right: 110px;
   }
 }
@@ -167,5 +166,11 @@
   @media (min-width: $tablet-width) {
     display: block;
     margin-right: unset;
+  }
+}
+
+.main-header__link--text-catalog {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 5px;
   }
 }

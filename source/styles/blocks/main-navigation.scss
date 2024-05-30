@@ -19,7 +19,7 @@
 
 .main-navigation__item {
   flex: 1;
-  font-family: "Oswald", sans-serif, "Arial";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -100,7 +100,7 @@
     content: "";
     width: 100%;
     right: 0;
-    bottom: -10px;
+    bottom: -8px;
     height: 2px;
     background-color: $bg-basic-green;
   }

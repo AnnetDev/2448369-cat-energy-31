@@ -1,7 +1,7 @@
 .product-card-more {
   display: flex;
   flex-flow: column wrap;
-  padding: 25px 0 20px;
+  padding: 25px 0;
   align-items: center;
   position: relative;
 
@@ -47,7 +47,7 @@
 
 .product-card-more__title {
   margin: 0;
-  font-family: "Oswald", sans-serif, "Arial";
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -66,6 +66,10 @@
     margin-bottom: 0;
     grid-column: 1 / -1;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -16px;
+  }
 }
 
 .product-card-more__description {
@@ -75,13 +79,18 @@
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     grid-row: 3;
     font-size: 16px;
     line-height: 20px;
     grid-column: 1 / -1;
+    max-width: 170px;
+    text-align: center;
+    min-height: 96px;
   }
+  @media (min-width: $desktop-width) {
+  min-height: 103px;}
 }
 
 .product-card-more__button {
@@ -107,7 +116,8 @@
   @media (min-width: $tablet-width) {
     grid-row: 1;
     grid-column: 1 / 2;
-    margin-top: 50px;
+    margin-top: 49px;
+    margin-bottom: 26px;
     width: 60px;
     height: 60px;
   }
