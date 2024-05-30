@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelector(".main-header__toggle"),n=document.querySelector(".main-navigation");e.addEventListener("click",()=>{n.classList.toggle("main-navigation--open"),n.classList.toggle("main-navigation--closed"),e.classList.toggle("main-header__toggle--opened")})});
