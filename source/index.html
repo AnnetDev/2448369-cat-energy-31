@@ -32,11 +32,11 @@
           <img class="main-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="логотип Cat Energy">
         </picture>
       </a>
-      <button class="main-header__toggle " type="button">
-        <i class="main-header__toggle-iconline"></i>
+      <button class="main-header__toggle main-header__toggle--nojs " type="button">
+        <span class="main-header__toggle-iconline"></span>
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="main-navigation main-navigation--closed">
+      <nav class="main-navigation main-navigation--nojs">
         <ul class="main-navigation__list ">
           <li class="main-navigation__item">
             <a class="main-navigation__link main-navigation__link--index " href="#" aria-current="page">
@@ -199,18 +199,20 @@
     </section>
 
     <section class="contacts">
-      <div class="contacts__content-wrapper container">
-        <h2 class="contacts__title visually-hidden">
-          Контакты
-        </h2>
-        <p class="contacts__invite">
-          Приглашаем<br>к сотрудничеству дилеров!
-        </p>
-        <p class="contacts__address">
-          <span class="contacts__address-details">ул. Большая Конюшенная, д. 19/8
-          </span>
-          <span class="contacts__address-details">Санкт-Петербург</span>
-        </p>
+      <div class="contacts__container container">
+        <div class="contacts__content-wrapper">
+          <h2 class="contacts__title visually-hidden">
+            Контакты
+          </h2>
+          <p class="contacts__invite">
+            Приглашаем<br>к сотрудничеству дилеров!
+          </p>
+          <p class="contacts__address">
+            <span class="contacts__address-details">ул. Большая Конюшенная, д. 19/8
+            </span>
+            <span class="contacts__address-details">Санкт-Петербург</span>
+          </p>
+        </div>
       </div>
       <div class="contacts__location">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876791631!2d30.320467112899244!3d59.93871647481054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sse!4v1713343783650!5m2!1sru!2sse" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">

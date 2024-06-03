@@ -80,7 +80,7 @@
 
 .main-header__toggle::before,
 .main-header__toggle::after,
-.main-header__toggle i {
+.main-header__toggle .main-header__toggle-iconline {
   content: "";
   position: absolute;
   height: 2px;
@@ -129,27 +129,13 @@
   transform-origin: center;
 }
 
-.main-header__toggle--opened i {
+.main-header__toggle--opened .main-header__toggle-iconline {
   opacity: 0;
 }
 
 .main-header__toggle--nojs {
   display: block;
-
-  &::before {
-    transform: rotate(45deg);
-    top: 50%;
-    transform-origin: center;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-    top: 50%;
-    transform-origin: center;
-  }
-}
-
-.main-header__toggle--nojs i {
+  visibility: hidden;
   opacity: 0;
 }
 

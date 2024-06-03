@@ -5,15 +5,3 @@
     justify-content: center;
   }
 }
-
-.field {
-  max-height: 56px;
-  padding: 13px;
-  margin-bottom: 16px;
-  width: 100%;
-  border: solid 1px #cdcdcd;
-
-  @media (min-width: $tablet-width) {
-    width: 496px;
-  }
-}

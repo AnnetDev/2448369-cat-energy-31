@@ -36,8 +36,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    gap: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 80px;
   }
 }
 
