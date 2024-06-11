@@ -2,7 +2,7 @@
 
 * Студент: [Anna Baidikova](https://up.htmlacademy.ru/adaptive/31/user/2448369).
 * Наставник: [Дмитрий Осадченко](https://htmlacademy.ru/profile/dimaos).
-* Проект: [«Кэт энерджи»]()
+
 
 ---
 
