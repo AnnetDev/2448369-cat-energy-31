@@ -1,45 +1,67 @@
-# Личный проект «Кэт энерджи»
+# Cat Energy
 
-* Студент: [Anna Baidikova](https://up.htmlacademy.ru/adaptive/31/user/2448369).
-* Наставник: [Дмитрий Осадченко](https://htmlacademy.ru/profile/dimaos).
+A responsive multi-page website for a cat nutrition brand, built as part of the HTML Academy adaptive layout course.
 
-
----
-
-**Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
-
-_Не удаляйте и не обращайте внимание на файлы и папки:_<br>
-_`.github`, `.editorconfig`, `.eslintrc`, `.gitattributes`, `.gitignore`, `.linthtmlrc`, `.stylelintrc`, `.gulpfile.js`, `svgo.config.js` `package.json`, `package-lock.json`._
+**Student:** [Anna Baidikova](https://up.htmlacademy.ru/adaptive/31/user/2448369)
+**Mentor:** Dmitry Osadchenko
 
 ---
 
-### Памятка
+## Pages
 
-#### 1. Зарегистрируйтесь на Гитхабе
+- **Home** (`index.html`) — hero section, feature highlights, nutrition programs, before/after showcase, subscription form
+- **Catalog** (`catalog.html`) — product cards with filters and additional promo block
+- **404** (`404.html`) — custom error page
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+## Tech Stack
 
-#### 2. Создайте форк
+| Area | Tools |
+|------|-------|
+| Markup | HTML5, BEM methodology |
+| Styles | SCSS → PostCSS → LightningCSS |
+| Scripts | Vanilla JS, ES modules, esbuild |
+| Build | Gulp 4 |
+| Dev server | browser-sync |
+| Images | WebP + JPEG/PNG, 1x/2x retina, responsive `<picture>` |
+| SVG | SVG sprite via gulp-stacksvg |
+| Linting | stylelint, eslint, linthtml, BEM linter, W3C HTML validator |
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/2448369-cat-energy-31) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+## Features
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808133-3a7ace00-a190-11e9-9d29-401b02036a9c.jpg">
+- **Fully adaptive layout** — mobile-first, tested across mobile, tablet, and desktop breakpoints
+- **Retina-ready images** — all raster images served in WebP + fallback formats at 1x/2x resolutions
+- **SVG icon sprite** — optimized and bundled with svgo + gulp-stacksvg
+- **Slider** — interactive before/after cat photo comparison on the homepage
+- **Subscription form** — email capture with field validation
+- **BEM architecture** — strict block/element/modifier naming enforced by linter
+- **Automated build pipeline** — Gulp handles SCSS compilation, JS bundling, image optimization, HTML minification, and live reload
 
-Получится вот так:
+## Getting Started
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808135-3a7ace00-a190-11e9-9a8d-7390b3784c65.jpg">
+```bash
+npm install
+npm start       # dev server with live reload
+npm run build   # production build → /build
+npm run lint    # run all linters
+npm run preview # build + serve the production output
+```
 
-#### 3. Клонируйте репозиторий на свой компьютер
+## Project Structure
 
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии.
-
-#### 4. Начинайте обучение!
+```
+source/
+├── styles/
+│   ├── blocks/     # BEM block styles (SCSS)
+│   └── common/     # global styles, variables, mixins
+├── scripts/        # JavaScript modules
+├── images/         # raster assets (jpg, png, webp)
+├── icons/          # SVG icons for sprite
+├── fonts/
+├── *.html
+```
 
 ---
 
 <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
 
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
-
-[check-image]: https://github.com/htmlacademy-adaptive/2448369-cat-energy-31/workflows/Project%20check/badge.svg?branch=master
-[check-url]: https://github.com/htmlacademy-adaptive/2448369-cat-energy-31/actions
+Built during the professional course [«HTML & CSS. Adaptive Layout and Automation»](https://htmlacademy.ru/intensive/adaptive) by [HTML Academy](https://htmlacademy.ru).
